@@ -1,5 +1,9 @@
+
+<!DOCTYPE html>
 <html>
-    <head>
+    <body>
+    <p>1. Write a JavaScript program to reverse a given string. </p>
+    <p class="ReverseString"></p>
         <script>
            
             var string=prompt("Enter a string");
@@ -9,6 +13,7 @@
                 revString+=string[i];
             }
             console.log(`${string} of reverse is: ${revString}`);
+            document.getElementsByClassName("ReverseString").innerHTML=revString;
         </script>
-    </head>
+    </body>
 </html>
