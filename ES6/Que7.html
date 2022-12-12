@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Create a class of student (rollno, name, totalmarks, classname). Now you have sort the 
+student data on the basis of result using arrow function.</p>
+
+<p>See output on console. Students are sorted in descending order on their total marks</p>
+<p id="demo"></p>
+
+<script>
+class Student {
+  constructor(rollno, name,totalmarks,classname) {
+    this.rollno = rollno;
+    this.name = name;
+	this.totalmarks = totalmarks;
+	this.classname = classname;
+  }
+}
+
+var student1 = new Student(1,"Prachi",78,"First");
+var student2 = new Student(2,"Pradnya",92,"Second");
+var student3 = new Student(3,"Pratiksha",86,"Third");
+let students = [student1,student2,student3];
+var sortByMarks = (student1, student2)=>student2.totalmarks - student1.totalmarks;
+console.log(students.sort(sortByMarks));
+
+
+</script>
+
+</body>
+</html> 

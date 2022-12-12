@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Functions</h1>
+<h2>The Arrow Function</h2>
+
+<p>Create an arrow function by which will take multiple strings and you have print each string along with length of each string.</p>
+
+<p id="demo"></p>
+
+<script>
+let nameArray=["prachi","nikita","pradnya","tushar","aniket"];
+document.writeln("nameArray:"+nameArray);
+
+let lengths=nameArray.map((name)=>name.length);
+
+document.getElementById("demo").innerHTML =lengths;
+</script>
+
+</body>
+</html>

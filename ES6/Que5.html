@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Functions</h1>
+<h2>The Arrow Function</h2>
+
+<p>5) Create an arrow function by which you will take input of string and you check given string is palindrome or not.
+</p>
+
+<p id="demo"></p>
+
+<script>
+const string=prompt("Enter a string");
+var checkPalindrome=string=>{
+
+   // find the length of a string
+   const len = string.length;
+   // loop through half of the string
+    for (let i = 0; i < len / 2; i++) {
+
+    // check if first and last string are same
+    if (string[i] !== string[len - 1 - i]) {
+            return 'It is not a palindrome';
+        }
+    }
+    return 'It is a palindrome';
+}
+document.getElementById("demo").innerHTML =checkPalindrome(string);
+</script>
+
+</body>
+</html>
