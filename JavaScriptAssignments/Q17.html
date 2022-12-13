@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+    
+
+
+<p> Write a JavaScript program to replace all the numbers with a specified number of a given 
+    array of integers.
+
+ 
+
+    </p>
+    <table border="1">
+
+        <tr >
+          <th>INPUT</th>
+           <th>OUTPUT</th>
+        </tr>
+    
+        <tr>
+            <td><p id="p1"></p></td>
+            <td><p id="p2"></p></td>
+    </table>
+
+<script>
+function array_element_replace(arr, old_value, new_value) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === old_value) {
+      arr[i] = new_value;
+    }
+  }
+  return arr;
+}
+
+
+var n= [1, 2, 3, 2, 2, 8, 1, 9];
+const input=n;
+document.getElementById("p1").innerHTML=input;
+var result=array_element_replace(n, 2, 5);
+console.log(result);
+
+document.getElementById("p2").innerHTML=result;
+
+</script>
+
+</body>
+</html>

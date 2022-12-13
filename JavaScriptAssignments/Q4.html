@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Write a JavaScript program to convert a given number to hours and minutes. </p>
+
+<p id="Q4"></p>
+
+<script>
+    // const convert_time=function(num){
+    //     let hours=Math.floor(num/60);
+    //     let minutes=num % 60;
+    //     console.log(hours)
+    // }
+    // console.log(convert_time(45))
+function time_convert(num)
+ { 
+  var hours = Math.floor(num / 60);  
+  var minutes = num % 60;
+  return hours + ":" + minutes;         
+}
+document.getElementById("Q4").innerHTML = time_convert(300);
+
+</script>
+</body>
+</html> 
